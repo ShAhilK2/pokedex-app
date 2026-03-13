@@ -9,7 +9,7 @@ const PokedexLayout = () => {
       }}
     >
       <Stack.Screen name="index" options={{ title: 'Pokemon' ,headerShown: true}} />
-      <Stack.Screen name="[id]" options={{ title: 'Pokemon Details' ,headerShown: true}} />
+      <Stack.Screen name="[id]" options={{ title: 'Details' ,headerShown: true}} />
     </Stack>
   )
 }
