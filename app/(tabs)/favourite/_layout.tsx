@@ -1,12 +1,20 @@
-import { Stack } from 'expo-router'
-import React from 'react'
+import { Stack } from "expo-router";
 
-const FavoutiteScreenLayout = () => {
+export default function FavoritesLayout() {
   return (
-   <Stack>
-    <Stack.Screen name='index'options={{title : "Favourites"}}/>
-   </Stack>
-  )
+    <Stack
+      screenOptions={{
+        headerStyle: { backgroundColor: "#E3350D" },
+        headerTintColor: "#fff",
+        headerTitleStyle: { fontWeight: "bold" },
+      }}
+    >
+      <Stack.Screen
+        name="index"
+        options={{
+          title: "Favorites",
+        }}
+      />
+    </Stack>
+  );
 }
-
-export default FavoutiteScreenLayout

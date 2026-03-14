@@ -9,26 +9,26 @@ import { Href, useRouter } from "expo-router";
 import { useEffect, useRef, useState } from "react";
 
 import {
-    Animated,
-    Easing,
-    Image,
-    Pressable,
-    ScrollView as RNScrollView,
-    StyleSheet,
-    Text,
-    View,
-    type ViewStyle,
+  Animated,
+  Easing,
+  Image,
+  Pressable,
+  ScrollView as RNScrollView,
+  StyleSheet,
+  Text,
+  View,
+  type ViewStyle,
 } from "react-native";
 import Reanimated, {
-    Extrapolation,
-    FadeIn,
-    FadeInDown,
-    FadeInUp,
-    ZoomIn,
-    interpolate,
-    useAnimatedScrollHandler,
-    useAnimatedStyle,
-    useSharedValue,
+  Extrapolation,
+  FadeIn,
+  FadeInDown,
+  FadeInUp,
+  ZoomIn,
+  interpolate,
+  useAnimatedScrollHandler,
+  useAnimatedStyle,
+  useSharedValue,
 } from "react-native-reanimated";
 
 interface PokemonDetailsProps {

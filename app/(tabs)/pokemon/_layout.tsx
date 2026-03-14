@@ -1,17 +1,17 @@
-import { Stack } from 'expo-router'
-import React from 'react'
+import { Stack } from "expo-router";
 
-const PokedexLayout = () => {
+export default function PokedexLayout() {
   return (
     <Stack
       screenOptions={{
-        headerShown: false,
+        headerStyle: { backgroundColor: "#E3350D" },
+        headerTintColor: "#fff",
+        headerTitleStyle: { fontWeight: "bold" },
+        headerLargeStyle :true
       }}
     >
-      <Stack.Screen name="index" options={{ title: 'Pokemon' ,headerShown: true}} />
-      <Stack.Screen name="[id]" options={{ title: 'Details' ,headerShown: true}} />
+      <Stack.Screen name="index" options={{ title: "Pokédex" }} />
+      <Stack.Screen name="[id]" options={{ title: "Details" }} />
     </Stack>
-  )
+  );
 }
-
-export default PokedexLayout
